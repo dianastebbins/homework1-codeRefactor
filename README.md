@@ -1,6 +1,39 @@
 # homework1-codeRefactor
 Refactor an existing webpage for Horiseon Social Solution Services, Inc. to make it accessible
 
+# Changes made to improve semantics, accessibility and performance of index.html
+1 - replaced <title> text with "Info page for Horiseon Social Solution Services, Inc."
+2 - added alt="[description]" inside <img> tags (6)
+3 - added id="search-engine-optimization" to Search Engine Optimization content <div> so <a href="#search-engine-optimization">Search Engine Optimization</a> link would work
+4 - changed <div class="header"> and <div class="footer"> tags to <header> and <footer> tags, respectively
+5 - added class="horizontal-menu" to <div> tag holding list elements
+6 - changed <div>s with class identified as benefit-lead, benefit-brand, and benefit-cost all to <div>s with class benefits-section
+7 - changed <div>s with class identified as search-engine-optimization, online-reputation-management, and social-media-marketing to <div>s with class content-section
+8 - changed <div class="hero"></div> to <div id="hero"></div> because "hero" seems more like a particular instance rather than a whole class
+9 - added some comments
+10- updated copyright at bottom to reflect year 2020
+11- changed footer h2 to h4 (default behavior) to keep headers in descending order down page
+12- reordered code into order that makes sense to me: elements then classes then ids, more or less in the order each type appears in the html (not a rule, just a starting guideline :-)  
+
+# Changes made in style.css to match any index.html changes and to reduce redundancy in style.css
+1 - changed .header and .footer definitions to header and footer, respectively
+2 - changed unnecessary path-like .css definition names to direct element or class definitions
+    a - 'header h1' to just h1
+    b - 'header h1 .seo' to just .seo
+    c - 'header div' to .horizontal-menu
+    d - 'header div ul li' to just li
+3 - removed 'header div ul' because the 'list-style-type: none;' content appears to be redundant when using the 'display: inline-block' attribute in the <li> styling.
+4 - combined redundant class stylings into single styling
+    a - '.search-engine-optimization h2', '.online-reputation-management h2', and '.social-media-marketing h2' combined into just h2
+    b - '.benefit-lead h3', '.benefit-brand h3', and '.benefit-cost h3' combined into just h3
+    c - '.benefit-lead', '.benefit-brand', and '.benefit-cost' combined into a single .benefits-section
+    d - '.benefit-lead img', '.benefit-brand img', and '.benefit-cost img' combined into a single '.benefits-section img'
+    e - '.search-engine-optimization', '.online-reputation-management', and '.social-media-marketing' combined into a single .content-section
+    f - '.search-engine-optimization img', '.online-reputation-management img', and '.social-media-marketing img' combined into a single '.content-section img'
+5 - removed 'footer h2' (using default <h4> tag in html instead)
+6 - changed '.hero' to '#hero' to match html change
+
+
 # User Story and Acceptance Criteria copied from Homework instructional README.md for reference
 ## User Story
 
