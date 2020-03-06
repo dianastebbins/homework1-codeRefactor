@@ -33,6 +33,14 @@ h3 {
     text-align: center;
 }
 
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
 li {
     display: inline-block; /* seems to also take care of removing bullets from list, making list-style-type: none; obsolete */
     margin-left: 25px;
@@ -47,6 +55,23 @@ p {
     font-size: 16px;
 }
 
+content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
 footer {
     padding: 30px;
     clear: both;
@@ -57,20 +82,6 @@ footer {
 /* class stylings */
 .seo {
     color: #d9dcd6;
-}
-
-.horizontal-menu {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
 }
 
 .content-section {
@@ -94,17 +105,6 @@ footer {
 .float-right {
     float: right;
     margin-left: 25px;
-}
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
 }
 
 .benefits-section {
